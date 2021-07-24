@@ -16,9 +16,9 @@
         <h2>うちの可愛い愛犬ポチを紹介するホームページです。</h2>
 
         <p><a href="{% url 'myapp:welcome' %}">可愛いわんちゃんがうちに来てくれました</a></p>
-        <p>ポチの好きな食べ物</p>
-        <p>ポチの嫌いな食べ物</p>
-        <p>ポチが１才になりました</p>
+        <p><a href="{% url 'myapp:like' %}">ポチの好きな食べ物</a></p>
+        <p><a href="{% url 'myapp:dislike' %}">ポチの嫌いな食べ物</a></p>
+        <p><a href="{% url 'myapp:birthday' %}">ポチが１才になりました</a></p>
     </body>
 
 </html>
