@@ -4,5 +4,9 @@ from . import views
 app_name='myapp'
 
 urlpatterns = [
-    path('', views.index, name='index'),
+  url(r'^$', views.index, name='index'),
+  url(r'^welcome/$', views.welcome, name='welcome'),
+  url(r'^like/$', views.like, name='like'),
+  url(r'^dislike/$', views.dislike, name='dislike'),
+  url(r'^birthday/$', views.birthday, name='birthday'),
 ]
